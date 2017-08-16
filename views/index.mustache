@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Robo Profiles</title>
+  <link rel="shortcut icon" href="robot.ico" />
+ </head>
+ <body>
+   <div id="user_profiles">
+     {{#users}}
+     <div class="profile">
+       <img src="{{avatar}}" />
+        <a href="{{id}}">{{name}}</a>
+       {{#job}}
+        <p>{{job}} @ {{company}}</p>
+       {{/job}}
+       {{^job}}
+        <p>Available for hire</p>
+       {{/job}}
+      </div>
+     {{/users}}
+   </div>
+ </body>
+</html>

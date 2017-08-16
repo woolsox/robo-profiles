@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Robo Profiles</title>
+  <link rel="shortcut icon" href="robot.ico" />
+ </head>
+ <body>
+   <div id="profile">
+     {{#id}}
+     <div class="header">
+       <img src="{{avatar}}" />
+       <h1>{{name}}</h1>
+       <p>
+         {{address.city}}, {{address.country}} | {{job}}, {{company}} {{email}} | {{phone}}
+       </p>
+     </div>
+     <div class="ed_skills">
+       {{#university}}
+       Education: 
+       <li>
+        {{university}}
+       </li>
+       {{/university}}
+       {{^university}}
+       {{/university}}
+       {{#skills}}
+       Skills:
+       <li>
+         {{.}}
+       </li>
+       {{/skills}}
+       {{^skills}}
+       {{/skills}}
+     </div>
+     {{/id}}
+   </div>
+ </body>
+</html>
