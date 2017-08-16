@@ -4,6 +4,8 @@
   <meta charset="utf-8" />
   <title>Robo Profiles</title>
   <link rel="shortcut icon" href="robot.ico" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
  </head>
  <body>
    <div id="profile">
@@ -12,20 +14,18 @@
        <img src="{{avatar}}" />
        <h1>{{name}}</h1>
        <p>
-         {{address.city}}, {{address.country}} | {{job}}, {{company}} {{email}} | {{phone}}
+         {{address.city}}, {{address.country}} | {{job}}{{^job}}Available for hire{{/job}}, {{company}} {{email}} | {{phone}}
        </p>
-     </div>
-     <div class="ed_skills">
        {{#university}}
-       Education: 
+       Education:
        <li>
         {{university}}
        </li>
        {{/university}}
        {{^university}}
        {{/university}}
-       {{#skills}}
        Skills:
+       {{#skills}}
        <li>
          {{.}}
        </li>

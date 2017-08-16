@@ -1,0 +1,62 @@
+/* GLOBAL STYLING */
+
+* {
+ font-family: Helvetica, sans-serif;
+}
+
+/* USER INDEX STYLING */
+
+#user_profiles {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: row;
+ flex-wrap: wrap;
+}
+
+.profile {
+ flex-grow: 1;
+ margin: 10px 10px;
+ border: 2px solid lightgray;
+ width: 20%;
+ text-align: center;
+}
+
+.available p {
+ font-weight: 800;
+ font-size: 16px;
+ text-transform: uppercase;
+ color: red;
+}
+
+.profile_img {
+ margin: 10px 10px;
+}
+
+.profile a {
+ font-weight: bolder;
+ font-size: 20px;
+ color: blue;
+ text-decoration: none;
+}
+
+.profile p {
+ padding: 0px 10px;
+}
+
+/* USER PAGE STYLING */
+
+#profile {
+ display: flex;
+ justify-content: center;
+}
+
+.header {
+ text-align: center;
+ border: 2px solid lightgray;
+ padding: 10px 10px;
+}
+
+.header img {
+ border: 2px solid lightblue;
+ border-radius: 50%;
+}

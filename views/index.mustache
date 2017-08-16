@@ -4,18 +4,24 @@
   <meta charset="utf-8" />
   <title>Robo Profiles</title>
   <link rel="shortcut icon" href="robot.ico" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
  </head>
  <body>
    <div id="user_profiles">
      {{#users}}
      <div class="profile">
-       <img src="{{avatar}}" />
+       <div class="profile_img">
+        <img src="{{avatar}}" />
+       </div>
         <a href="{{id}}">{{name}}</a>
        {{#job}}
         <p>{{job}} @ {{company}}</p>
        {{/job}}
        {{^job}}
-        <p>Available for hire</p>
+        <div class="available">
+          <p>Available for hire</p>
+        </div>
        {{/job}}
       </div>
      {{/users}}
